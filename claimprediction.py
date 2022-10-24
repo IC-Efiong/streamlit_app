@@ -91,12 +91,12 @@ if(selected == 'Metrices and Graphs'):
 
     st.subheader('Actual Vs Linear Regresssion Predicted Claim Amount')
 
-    image = Image.open('linear.PNG')
+    image = Image.open('linear.jpg')
     st.image(image, caption='Actual vs Linear Regression Predicted Claims Amount Distribution')
 
     st.subheader('Actual Vs XGBoost Regresssion Predicted Claim Amount')
 
-    xgbimage = Image.open('xgb.PNG')
+    xgbimage = Image.open('xgb.jpg')
     st.image(xgbimage, caption='Actual vs XGBoost Predicted Claims Amount Distribution')
 
 
