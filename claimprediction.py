@@ -24,9 +24,8 @@ with st.sidebar:
     selected = option_menu('Insurance Claim Prediction System',
     
                         ['Home','Metrices and Graphs',
-                        'Linear Model Prediction',
                         'XGBoost Model Prediction'],
-                        icons=['heart','activity','activity','activity'],
+                        icons=['heart','activity','activity'],
                         default_index=0)
     
 
@@ -99,11 +98,6 @@ if(selected == 'Metrices and Graphs'):
     xgbimage = Image.open('xgb.jpg')
     st.image(xgbimage, caption='Actual vs XGBoost Predicted Claims Amount Distribution')
 
-
-if(selected == 'Linear Model Prediction'):
-
-    # page title
-    st.title('Linear Model Prediction')
 
 # XGBoost Model Prediction Page
 if(selected == 'XGBoost Model Prediction'):
