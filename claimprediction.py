@@ -37,7 +37,7 @@ with st.sidebar:
 
 #Home
 if(selected == 'Home'):
-    st.title('Insurython3ance Claim Prediction System')
+    st.title('Insurance Claim Prediction System')
     data = pd.read_csv('cleandata.csv')
 
     col1, col2= st.columns(2)
