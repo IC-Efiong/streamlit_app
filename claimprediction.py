@@ -37,7 +37,7 @@ with st.sidebar:
 
 #Home
 if(selected == 'Home'):
-    st.title('Insurance Claim Prediction System')
+    st.title('Insurython3ance Claim Prediction System')
     data = pd.read_csv('cleandata.csv')
 
     col1, col2= st.columns(2)
@@ -91,12 +91,12 @@ if(selected == 'Metrices and Graphs'):
 
     st.subheader('Actual Vs Linear Regresssion Predicted Claim Amount')
 
-    image = Image.open('linear.png')
+    image = Image.open('linear.PNG')
     st.image(image, caption='Actual vs Linear Regression Predicted Claims Amount Distribution')
 
     st.subheader('Actual Vs XGBoost Regresssion Predicted Claim Amount')
 
-    xgbimage = Image.open('xgb.png')
+    xgbimage = Image.open('xgb.PNG')
     st.image(xgbimage, caption='Actual vs XGBoost Predicted Claims Amount Distribution')
 
 
